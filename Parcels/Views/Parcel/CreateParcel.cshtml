@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Parcel Shipping Form</title>
+    <link 
+      rel="stylesheet" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+      crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Please enter the dimensions and weigth of your parcel</h1>
+    <form action="/parcel" method="post">
+      <label for="weigth">Parcel Weigth in lb:</label>
+      <input id="weigth" name="weigth" type="number">
+      <label for="heigth">Parcel heigth in in:</label>
+      <input id="heigth" name="heigth" type="number">
+      <label for="width">Parcel width in in:</label>
+      <input id="width" name="width" type="number">
+      <label for="length">Parcel length in in:</label>
+      <input id="length" name="length" type="number">
+      <button type="submit">Submit</button>
+    </form>  
+  </body>
+</html>

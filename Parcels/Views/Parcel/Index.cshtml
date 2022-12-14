@@ -10,7 +10,13 @@
       crossorigin="anonymous">
   </head>
   <body>
-    <h1>Ship your parcel!</h1>
-    <a href="/parcel/new">Click here to create a new parcel for shipping</a>
+    @using Project.Models;
+    
+    <h1>Here is the summary of your parcel shipping costs:</h1>
+    <p>Parcel weighth @Model.Weigth in</p>  
+    <p>Parcel heigth @Model.Heigth in</p>  
+    <p>Parcel width @Model.Width in</p>  
+    <p>Parcel length @Model.Length in</p> 
+    <h3>Total Cost: $@Model.CostToShip() </h3> 
   </body>
 </html>
